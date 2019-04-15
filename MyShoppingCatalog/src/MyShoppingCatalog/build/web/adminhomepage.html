@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="scripts/jquery.js">
+        </script>
+        <script type="text/javascript" src="scripts/adminoptions.js">
+        </script>
+
+    </head>
+    <body >
+        <div id="logo">
+            <img src="images/loginlogo3.png" >  <br>
+            <img src="images/shopping_logo5.png" >
+        </div>
+        <h3>Admin Options</h3>
+        <p>Please select a category you want to update:</p>
+        <ul style="list-style-type:none">
+        <li><a href="#"  onclick="expand(this)" id="Products">+Products</a>
+            <ul style='display:none;margin-left: 10px'  id="ProductsList"  >
+                <li><a href='#'>Add</a></li>
+                <li><a href='#'>Update</a></li>
+                <li><a href='#'>Delete</a></li>
+            </ul>
+        </li>
+        <li><a href="#"  onclick="expand(this)" id="Users">+Users</a>
+            <ul style='display:none' id="UsersList">
+                <li><a href='#'>Remove</a></li> 
+            </ul>
+        </li>
+        <li><a href="#"  onclick="expand(this)" id="Views">+Views</a>
+            <ul style='display:none' id="ViewsList">
+                <li><a href='#'>Orders</a></li>
+            </ul>
+        </li>
+        </ul>
+    </body>
+</html>
